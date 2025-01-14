@@ -1,7 +1,7 @@
 {
   "name": "OmanStatesAndCities",
   "main": "index.js",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Oman Database for states and cities",
   "homepage": "https://github.com/directus/directus.git",
   "repository": {
