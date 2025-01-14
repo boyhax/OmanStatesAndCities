@@ -12,41 +12,38 @@ A database containing information about cities and states in Oman, including slu
 
 To install the package, run the following command:
 
-```bash
-npm install OmanStatesAndCities
+```
+npm install oman-states-and-cities@1.0.0
+```
 Usage
 Importing the module
 You can import the module into your JavaScript or TypeScript project like this:
 
-javascript
-نسخ الكود
-import { getCities, getStates, allLocations } from "OmanStatesAndCities";
+```
+import { getCities, getStates, allLocations } from "oman-states-and-cities";
 Fetching Cities
 Use the getCities function to get all cities in Oman:
 
-javascript
-نسخ الكود
+
 const cities = getCities();
 console.log(cities);
 Fetching States
 Use the getStates function to get all states in Oman:
 
-javascript
-نسخ الكود
+
 const states = getStates();
 console.log(states);
 Accessing All Locations
 You can access all locations, including both cities and states, using the allLocations variable:
 
-javascript
-نسخ الكود
+
 const locations = allLocations;
 console.log(locations);
+```
 Location Type Definition
 The locations are typed as follows:
+```
 
-typescript
-نسخ الكود
 type Location = {
   slug: string; // Unique identifier for the location (e.g., "adam")
   label_ar: string; // Name of the location in Arabic (e.g., "أدم")
@@ -62,11 +59,11 @@ type Location = {
 type LocationList = Location[];
 
 export type locationType = "city" | "country" | "state";
+```
 Example Data
 Here is an example of a location object:
 
-json
-نسخ الكود
+```
 {
   "slug": "adam",
   "label_ar": "أدم",
@@ -78,6 +75,7 @@ json
   "lat": 22.3751,
   "lng": 57.5275
 }
+```
 License
 This project is licensed under the MIT License.
 
